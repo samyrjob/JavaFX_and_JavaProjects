@@ -1,0 +1,24 @@
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Text?>
+
+
+<StackPane fx:id="mainStackPane"  xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.appendixa.mainController">
+
+    
+
+    <Label fx:id="vehicleType" text="Select the vehicle type" />
+
+
+    <Label fx:id="penaltyPoints" text="How Many penalty points do you have ? " />
+
+    <CheckBox fx:id="checkbox25" text="Are you under 25 year old ?" />
+
+    <Button fx:id = "buttonConfirm" text="Click for calculation"  onAction="#handleButtonClick" alignment="CENTER" />
+
+
+
+</StackPane>

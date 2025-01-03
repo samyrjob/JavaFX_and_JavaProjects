@@ -1,0 +1,200 @@
+plastic containers, Plastic
+rubber items, Other
+aluminium foil, Other
+clothing, Other
+plastic straws, Plastic
+paper scraps, Paper
+textiles, Other
+vegetable peelings, FoodWaste
+cardboard boxes, Paper
+vegetable peelings, FoodWaste
+clothing, Other
+metals, Other
+rubber items, Other
+rubber items, Other
+paper scraps, Paper
+paper scraps, Paper
+wrappers, Plastic
+rubber items, Other
+aluminium foil, Other
+metals, Other
+wrappers, Plastic
+plastic straws, Plastic
+clothing, Other
+textiles, Other
+aluminium foil, Other
+paper scraps, Paper
+magazines, Paper
+metals, Other
+textiles, Other
+textiles, Other
+rubber items, Other
+plastic straws, Plastic
+plastic bottles, Plastic
+paper scraps, Paper
+wrappers, Plastic
+fruit waste, FoodWaste
+rubber items, Other
+polystyrene, Plastic
+leftover bread, FoodWaste
+rubber items, Other
+vegetable peelings, FoodWaste
+clothing, Other
+plastic straws, Plastic
+magazines, Paper
+aluminium foil, Other
+aluminium foil, Other
+paper scraps, Paper
+wrappers, Plastic
+paper scraps, Paper
+plastic containers, Plastic
+wrappers, Plastic
+rubber items, Other
+newspapers, Paper
+aluminium foil, Other
+plastic straws, Plastic
+textiles, Other
+paper scraps, Paper
+food scraps, FoodWaste
+leftover bread, FoodWaste
+plastic straws, Plastic
+aluminium foil, Other
+vegetable peelings, FoodWaste
+newspapers, Paper
+vegetable peelings, FoodWaste
+leftover bread, FoodWaste
+metals, Other
+fruit waste, FoodWaste
+fruit waste, FoodWaste
+vegetable peelings, FoodWaste
+wrappers, Plastic
+textiles, Other
+textiles, Other
+paper scraps, Paper
+textiles, Other
+clothing, Other
+vegetable peelings, FoodWaste
+newspapers, Paper
+fruit waste, FoodWaste
+plastic bottles, Plastic
+metals, Other
+vegetable peelings, FoodWaste
+food scraps, FoodWaste
+textiles, Other
+magazines, Paper
+newspapers, Paper
+fruit waste, FoodWaste
+cardboard boxes, Paper
+cardboard boxes, Paper
+aluminium foil, Other
+plastic containers, Plastic
+aluminium foil, Other
+rubber items, Other
+metals, Other
+notebooks, Paper
+metals, Other
+rubber items, Other
+rubber items, Other
+newspapers, Paper
+coffee grounds, FoodWaste
+textiles, Other
+textiles, Other
+wrappers, Plastic
+metals, Other
+metals, Other
+rubber items, Other
+wrappers, Plastic
+vegetable peelings, FoodWaste
+aluminium foil, Other
+fruit waste, FoodWaste
+metals, Other
+paper scraps, Paper
+paper scraps, Paper
+coffee grounds, FoodWaste
+cardboard boxes, Paper
+textiles, Other
+newspapers, Paper
+clothing, Other
+plastic bottles, Plastic
+paper scraps, Paper
+aluminium foil, Other
+cardboard boxes, Paper
+vegetable peelings, FoodWaste
+cardboard boxes, Paper
+rubber items, Other
+textiles, Other
+polystyrene, Plastic
+coffee grounds, FoodWaste
+magazines, Paper
+textiles, Other
+rubber items, Other
+textiles, Other
+plastic bottles, Plastic
+wrappers, Plastic
+rubber items, Other
+textiles, Other
+rubber items, Other
+wrappers, Plastic
+aluminium foil, Other
+polystyrene, Plastic
+paper scraps, Paper
+polystyrene, Plastic
+clothing, Other
+leftover bread, FoodWaste
+textiles, Other
+paper scraps, Paper
+cardboard boxes, Paper
+plastic bottles, Plastic
+clothing, Other
+plastic bottles, Plastic
+leftover bread, FoodWaste
+textiles, Other
+vegetable peelings, FoodWaste
+aluminium foil, Other
+vegetable peelings, FoodWaste
+fruit waste, FoodWaste
+polystyrene, Plastic
+fruit waste, FoodWaste
+magazines, Paper
+rubber items, Other
+paper scraps, Paper
+aluminium foil, Other
+notebooks, Paper
+wrappers, Plastic
+food scraps, FoodWaste
+aluminium foil, Other
+food scraps, FoodWaste
+metals, Other
+polystyrene, Plastic
+metals, Other
+plastic containers, Plastic
+textiles, Other
+textiles, Other
+vegetable peelings, FoodWaste
+fruit waste, FoodWaste
+notebooks, Paper
+clothing, Other
+newspapers, Paper
+newspapers, Paper
+aluminium foil, Other
+newspapers, Paper
+leftover bread, FoodWaste
+food scraps, FoodWaste
+aluminium foil, Other
+clothing, Other
+food scraps, FoodWaste
+coffee grounds, FoodWaste
+polystyrene, Plastic
+wrappers, Plastic
+plastic containers, Plastic
+newspapers, Paper
+vegetable peelings, FoodWaste
+rubber items, Other
+textiles, Other
+metals, Other
+plastic containers, Plastic
+coffee grounds, FoodWaste
+plastic containers, Plastic
+plastic containers, Plastic
+wrappers, Plastic
+textiles, Other

@@ -1,0 +1,47 @@
+food and kitchen waste, FoodWaste
+green waste, FoodWaste
+Biodegradable waste, Paper
+ paper, Paper
+ cardboard, Paper
+ glass, Glass
+ bottles, Glass
+ jars, Glass
+ tin cans, Other
+ aluminum cans, Other
+ aluminium foil, Other
+ metals, Other
+ certain plastics, Plastic
+ textiles, Other
+ clothing, Other
+ tires, Other
+ batteries, Other
+Inert construction and demolition waste, Other
+Inert dirt, Other
+Inert rocks, Other
+Inert debris, Other
+electrical appliances, Other
+light bulbs, Other
+washing machines, Other
+TVs, Other
+computers, Other
+screens, Other
+mobile phones, Other
+alarm clocks, Other
+watches, Other
+waste clothing, Other
+Tetra Pack food and drink cartons, Other
+waste plastics such as toys, Plastic
+plastic garden furniture, Plastic
+ most paints, Other
+ chemicals, Other
+ tires, Other
+ batteries, Other
+ light bulbs, Other
+ electrical appliances, Other
+ fluorescent lamps, Other
+ aerosol spray cans, Other
+ fertilizers, Other
+Toxic pesticides, Other
+Toxic herbicides, Other
+Toxic fungicides, Other
+expired pharmaceutical drugs, Other

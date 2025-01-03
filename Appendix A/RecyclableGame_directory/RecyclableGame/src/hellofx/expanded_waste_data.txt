@@ -1,0 +1,250 @@
+bread crusts, FoodWaste
+egg shells, FoodWaste
+leftover pasta, FoodWaste
+banana peels, FoodWaste
+leftover pasta, FoodWaste
+vegetable scraps, FoodWaste
+vegetable scraps, FoodWaste
+banana peels, FoodWaste
+vegetable scraps, FoodWaste
+leftover pasta, FoodWaste
+egg shells, FoodWaste
+banana peels, FoodWaste
+bread crusts, FoodWaste
+leftover pasta, FoodWaste
+banana peels, FoodWaste
+banana peels, FoodWaste
+vegetable scraps, FoodWaste
+vegetable scraps, FoodWaste
+egg shells, FoodWaste
+vegetable scraps, FoodWaste
+banana peels, FoodWaste
+banana peels, FoodWaste
+vegetable scraps, FoodWaste
+bread crusts, FoodWaste
+vegetable scraps, FoodWaste
+leftover pasta, FoodWaste
+vegetable scraps, FoodWaste
+egg shells, FoodWaste
+leftover pasta, FoodWaste
+leftover pasta, FoodWaste
+egg shells, FoodWaste
+egg shells, FoodWaste
+banana peels, FoodWaste
+leftover pasta, FoodWaste
+banana peels, FoodWaste
+vegetable scraps, FoodWaste
+banana peels, FoodWaste
+banana peels, FoodWaste
+egg shells, FoodWaste
+egg shells, FoodWaste
+plastic cups, Plastic
+packaging film, Plastic
+plastic cups, Plastic
+grocery bags, Plastic
+plastic cups, Plastic
+water bottles, Plastic
+grocery bags, Plastic
+grocery bags, Plastic
+straws, Plastic
+plastic cups, Plastic
+grocery bags, Plastic
+straws, Plastic
+water bottles, Plastic
+grocery bags, Plastic
+straws, Plastic
+water bottles, Plastic
+plastic cups, Plastic
+plastic cups, Plastic
+straws, Plastic
+plastic cups, Plastic
+grocery bags, Plastic
+packaging film, Plastic
+straws, Plastic
+grocery bags, Plastic
+water bottles, Plastic
+straws, Plastic
+straws, Plastic
+water bottles, Plastic
+water bottles, Plastic
+water bottles, Plastic
+water bottles, Plastic
+plastic cups, Plastic
+grocery bags, Plastic
+packaging film, Plastic
+packaging film, Plastic
+grocery bags, Plastic
+straws, Plastic
+grocery bags, Plastic
+packaging film, Plastic
+water bottles, Plastic
+notebooks, Paper
+newspapers, Paper
+tissue boxes, Paper
+notebooks, Paper
+magazines, Paper
+magazines, Paper
+newspapers, Paper
+newspapers, Paper
+envelopes, Paper
+tissue boxes, Paper
+magazines, Paper
+tissue boxes, Paper
+magazines, Paper
+envelopes, Paper
+newspapers, Paper
+newspapers, Paper
+tissue boxes, Paper
+notebooks, Paper
+notebooks, Paper
+notebooks, Paper
+newspapers, Paper
+magazines, Paper
+magazines, Paper
+newspapers, Paper
+notebooks, Paper
+newspapers, Paper
+tissue boxes, Paper
+envelopes, Paper
+magazines, Paper
+newspapers, Paper
+magazines, Paper
+envelopes, Paper
+magazines, Paper
+notebooks, Paper
+envelopes, Paper
+magazines, Paper
+notebooks, Paper
+magazines, Paper
+envelopes, Paper
+tissue boxes, Paper
+light bulbs, Glass
+broken glasses, Glass
+mirrors, Glass
+jar lids, Glass
+jar lids, Glass
+light bulbs, Glass
+wine bottles, Glass
+light bulbs, Glass
+mirrors, Glass
+wine bottles, Glass
+light bulbs, Glass
+mirrors, Glass
+mirrors, Glass
+jar lids, Glass
+broken glasses, Glass
+mirrors, Glass
+light bulbs, Glass
+broken glasses, Glass
+mirrors, Glass
+broken glasses, Glass
+light bulbs, Glass
+jar lids, Glass
+jar lids, Glass
+jar lids, Glass
+broken glasses, Glass
+jar lids, Glass
+mirrors, Glass
+jar lids, Glass
+jar lids, Glass
+light bulbs, Glass
+jar lids, Glass
+broken glasses, Glass
+broken glasses, Glass
+mirrors, Glass
+wine bottles, Glass
+light bulbs, Glass
+mirrors, Glass
+wine bottles, Glass
+mirrors, Glass
+mirrors, Glass
+aluminium foil, Other
+bubble wrap, Other
+aluminium foil, Other
+clothing, Other
+ceramic plates, Other
+ceramic plates, Other
+ceramic plates, Other
+ceramic plates, Other
+chip bags, Other
+clothing, Other
+ceramic plates, Other
+bubble wrap, Other
+chip bags, Other
+clothing, Other
+ceramic plates, Other
+clothing, Other
+bubble wrap, Other
+bubble wrap, Other
+aluminium foil, Other
+clothing, Other
+ceramic plates, Other
+ceramic plates, Other
+aluminium foil, Other
+chip bags, Other
+bubble wrap, Other
+bubble wrap, Other
+aluminium foil, Other
+bubble wrap, Other
+ceramic plates, Other
+ceramic plates, Other
+ceramic plates, Other
+ceramic plates, Other
+ceramic plates, Other
+aluminium foil, Other
+ceramic plates, Other
+ceramic plates, Other
+chip bags, Other
+aluminium foil, Other
+ceramic plates, Other
+clothing, Other
+coffee cups, Other
+plastic straws, Other
+ceramic plates, Other
+polystyrene foam, Other
+chip bags, Other
+mirrors, Other
+broken toys, Other
+glossy magazines, Other
+wax paper, Other
+bubble wrap, Other
+pizza boxes, FoodWaste
+rotten fruits, FoodWaste
+cracked egg shells, FoodWaste
+cooking oil residue, FoodWaste
+spoiled bread, FoodWaste
+milk cartons, Paper
+envelopes with plastic windows, Paper
+cardboard boxes, Paper
+torn notebooks, Paper
+unused receipts, Paper
+detergent bottles, Plastic
+toothpaste tubes, Plastic
+empty shampoo bottles, Plastic
+damaged buckets, Plastic
+food wrappers, Plastic
+decorative glass, Other
+photo frames, Other
+disposable plates, Other
+plastic utensils, Other
+glittered greeting cards, Other
+dried leaves, FoodWaste
+banana peels, FoodWaste
+vegetable peels, FoodWaste
+tea bags, FoodWaste
+leftover rice, FoodWaste
+newspapers, Paper
+gift wraps, Paper
+used napkins, Paper
+junk mail, Paper
+poster board, Paper
+plastic containers, Plastic
+bubble tea straws, Plastic
+disposable razors, Plastic
+strawberry boxes, Plastic
+toy packaging, Plastic
+light bulbs, Other
+paint cans, Other
+broken chargers, Other
+used diapers, Other
+toilet seat covers, Other
