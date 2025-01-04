@@ -1,5 +1,6 @@
 import java.io.*;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -45,6 +46,7 @@ class Product implements Serializable {
         }
     }
 
+    @SuppressWarnings("unchecked")
     void read_product_from_serialized_file(File file){
         boolean not_present = false;
         try (FileInputStream fileInputStream = new FileInputStream(file.getName()); ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);){
@@ -142,6 +144,7 @@ public class ProductFiles {
         }
     }
 
+    @SuppressWarnings("unchecked")
     static void load_arraylist_from_serializedfile_to_localprogramme(String filename){
 
         try (FileInputStream fileInputStream = new FileInputStream(filename); ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);){
@@ -164,8 +167,7 @@ public class ProductFiles {
         load_arraylist_from_serializedfile_to_localprogramme(filename);
     
         System.out.println(list_of_products.size());
-        Product product = new Product("Kinder Bueno", 5.5, 369, 50);
-        add_and_read_product_from_to_serialized_file(filename, product);
+
         int input_pressed;
         do {
             System.out.println("\n Press 1 t add a new product in the serialized file \n Press 2 to remove a product from the serialized file\n Press 3 to exit the programme");
