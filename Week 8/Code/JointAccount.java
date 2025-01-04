@@ -73,15 +73,17 @@ class UserThread implements Runnable {
                             System.out.print(thrd.getName() + ", enter deposit amount: ");
                             double deposit = scanner.nextDouble();
                             bankaccount.make_deposit(deposit);
+                            System.out.println(thrd.getName() + "'s operation completed.");
                         }
                         case 2 -> {
                             System.out.print(thrd.getName() + ", enter withdrawal amount: ");
                             double withdraw = scanner.nextDouble();
                             bankaccount.withdraw_money(withdraw);
+                            System.out.println(thrd.getName() + "'s operation completed.");
                         }
                         default -> System.out.println("Invalid choice. Please try again.");
                     }
-                    System.out.println(thrd.getName() + "'s operation completed.");
+                   
                 }
             }
 
