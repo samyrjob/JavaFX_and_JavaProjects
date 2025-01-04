@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Optional;
 import java.util.HashMap;
 
-
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -306,7 +305,13 @@ public class Controller {
             content.putString(waste.getBin()); // Attach bin type
             dragboard.setContent(content);
             stackPane.setOpacity(0.5);
-            dragboard.setDragView(wasteItem.snapshot(null, null));
+                    // Capture a snapshot of the drag view
+            var dragSnapshot = wasteItem.snapshot(null, null);
+
+            // Set drag view with offsets to center it on the mouse
+            dragboard.setDragView(dragSnapshot, dragSnapshot.getWidth() / 2, dragSnapshot.getHeight() / 2);
+
+            // dragboard.setDragView(wasteItem.snapshot(null, null));
             event.consume();
         });
 
