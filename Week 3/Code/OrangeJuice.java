@@ -1,79 +1,100 @@
-// package Code;
-
 import java.util.Scanner;
+import java.util.HashMap;
+import java.util.Map;
 
 
+class OrangeJuice{
 
-public class OrangeJuice {
+    public static void calculationBottle(int response_ml, Map<Integer, String> map_bottles) 
+    {
+        int [] bottle_quantities = {2000, 1000, 500, 200, 125};
+       
+         // from keyboard
 
-    public static short [] boucle(short a, short [] sizes_reversed, short [] nb_bottles){
-        for (int i = 0; i<sizes_reversed.length; i++){
-            if (sizes_reversed[i] <= a){
-                short quotient = (short) (a/sizes_reversed[i]);
-                nb_bottles[i] += quotient;
-                a = (short) (a % sizes_reversed[i]);
-                if (a == 0){
+
+        for (int i = 0; i<5; i++){
+            if(response_ml >= bottle_quantities[i]){
+                    int remainder = response_ml % bottle_quantities[i];
+                    int quotient = ((response_ml - remainder)/bottle_quantities[i]);
+                    map_bottles.put(bottle_quantities[i], quotient + "x " + bottle_quantities[i]  + "ml (full)");
+
+                    if (remainder == 0 ){
+                        
+                        break;
+                    }
+
+                    else if (remainder >= 200 ){
+                            calculationBottle(remainder, map_bottles);
+                    }
+
+                    else if (remainder < 200){
+                                                
+                        if (remainder > 125 ){
+
+                            // 175
+                            // 1 x 125 ml (filled)
+                            // 1 x 125 ml (part filled)
+
+                            map_bottles.put(125, "1 x  125  ml (full)\n1 x  125  ml (semi-filled)");
+                            // we need 2 bottles !     
+                        }
+                        else if (remainder == 125) {
+                            map_bottles.put(125, "1 x  125  ml (full)");
+                        }
+                        else {
+                            map_bottles.put(125, "1 x  125  ml (semi-filled)");
+                            
+                            // we need  one
+                        }
+                    }
                     break;
+
+            }
+      }
+
+
+
+
+
+    }      
+
+
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner (System.in);
+        while (true){ 
+        System.out.println("How much orange juice do you want (in millilitres)?:" );
+        int response_ml = scanner.nextInt();
+        if (125 <= response_ml && response_ml <= 5000){
+            System.out.println(" You need the following bottles:");
+
+
+
+            Map<Integer, String> map_bottles = new HashMap<>();
+            calculationBottle(response_ml, map_bottles);
+
+            int [] bottle_quantities = {2000, 1000, 500, 200, 125};
+            for (int i : bottle_quantities){
+                if (map_bottles.get(i) != null){
+                    System.out.println(map_bottles.get(i));
                 }
-            }
-        }
-        if (a > 0){
-            nb_bottles[nb_bottles.length - 1] += 1;
-        }
-        return nb_bottles;
-    }
-
-
-    public static void main(String args[]){
-
-        short [] sizes_reversed = {2000, 1000, 500, 200, 125};
-        short nb_bottle_2000 = 0;
-        short nb_bottle_1000 = 0;
-        short nb_bottle_500 = 0;
-        short nb_bottle_200 = 0;
-        short nb_bottle_125 = 0;
-        short nb_bottle_125_not_full =0;
-        short [] nb_bottles = {nb_bottle_2000, nb_bottle_1000, nb_bottle_500, nb_bottle_200, nb_bottle_125, nb_bottle_125_not_full};
-
-    
-        Scanner scanner = new Scanner(System.in);
-        short userValue;
-
-        while (true) {
-            System.out.print("\"How much orange juice do you want ( in millilitres) ? \" Please enter a value between 125 and 5000: ");
-            userValue = scanner.nextShort();
-
-            // Check if the input is within the valid range
-            if (userValue >= 125 && userValue <= 5000) {
-                System.out.println(userValue);
-                break; // Exit the loop if the input is valid
-            } else {
-                System.out.println("Invalid input. Please try again."); // Prompt the user again
-            }
-        }
-
-
-
-        nb_bottles = boucle(userValue, sizes_reversed, nb_bottles);
-    
-    
-
-        System.out.println("You need the following bottles : \n");
-        for (int  i =0; i<nb_bottles.length - 2 ; i++ ){
-            if (nb_bottles[i] != 0){
-                System.out.println(nb_bottles[i] + " x " + sizes_reversed[i] + " ml  (full)");
-            }
-        }
-
-        if(nb_bottles[nb_bottles.length - 1] != 0){
-            System.out.println(nb_bottles[nb_bottles.length - 1] + " x 125 ml  (part filled)");
-
-        }
-        System.out.println("Enjoy your juice !");
-
-
-        scanner.close();
+                
         
+              }
+
+
+            System.out.println("Enjoy your juice!");
+            break;
+           
+        }
+        else {
+            System.out.println("You have entered an invalid ammount. Please choose again");
+
+    }
+           
+
+        
+    }
 
     }
 }

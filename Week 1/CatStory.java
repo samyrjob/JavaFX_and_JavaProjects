@@ -7,7 +7,7 @@ public class CatStory {
         
         try (Scanner scanner = new Scanner(System.in)) {
 
-            System.out.println("What is your cat’s name?\r");
+            System.out.println("What is your cat`s name?\r");
     
             String input = scanner.nextLine();
     

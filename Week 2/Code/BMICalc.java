@@ -13,7 +13,7 @@ public class BMICalc {
         scanner.nextLine();
 
         double BMI = (weight / Math.pow(height,2));
-        System.out.println("Your Body Mass Index is " + BMI );
+        System.out.printf("Your Body Mass Index is %.2f", BMI );
 
 
 
