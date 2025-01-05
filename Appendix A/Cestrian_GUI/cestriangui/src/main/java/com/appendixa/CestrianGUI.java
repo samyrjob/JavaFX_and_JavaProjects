@@ -11,7 +11,7 @@ import java.io.IOException;
 /**
  * JavaFX App
  */
-public class Main extends Application {
+public class CestrianGUI extends Application {
 
     private static Scene scene;
 
@@ -19,6 +19,7 @@ public class Main extends Application {
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("mainPage"), 640, 480);
         stage.setScene(scene);
+        stage.setTitle("Cestrian Insurance");
         stage.show();
     }
 
@@ -27,7 +28,7 @@ public class Main extends Application {
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource(fxml + ".fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(CestrianGUI.class.getResource(fxml + ".fxml"));
         return fxmlLoader.load();
     }
 

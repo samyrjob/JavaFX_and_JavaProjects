@@ -245,9 +245,10 @@ public class CatHome {
                 break;
             case 3:
                 Cat.displayAllCatsByStatus();
+                showMainMenu();
                 break;
             case 4:
-                break;
+                return;
             default:
                 showMainMenu();
                 break;
