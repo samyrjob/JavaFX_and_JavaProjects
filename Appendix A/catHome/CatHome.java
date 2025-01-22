@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.io.EOFException;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -19,6 +20,7 @@ class Cat implements Serializable{
     static private String filepath = "catalogcats.ser";
     int id;
     boolean statusAdoption;
+
 
 
 
@@ -57,6 +59,10 @@ class Cat implements Serializable{
 
     public int getID(){
         return this.id;
+    }
+
+    public static String getFilePath(){
+        return filepath;
     }
 
     // You may also want to add a method to update the status of adoption if necessary
@@ -213,7 +219,14 @@ public class CatHome {
     public static void main(String[] args) throws IOException{
 
 
-        // loadDataCats();
+
+        // loadDataCats() if not done ;
+        File file = new File(Cat.getFilePath());
+        if (file.length() == 0){
+            loadDataCats();
+        }
+        
+
         Cat.displayAvailableCats();
         showMainMenu();
    
