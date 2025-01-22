@@ -10,18 +10,20 @@ import java.io.BufferedReader;
 public class FileManager {
 
     static void read_file(String filepath) throws IOException{
-        BufferedReader bufferedReader = new BufferedReader(new FileReader(filepath));
-        String line;  // try with resources 
-        while ( (line = bufferedReader.readLine()) != null){
-                System.out.println(line);
+        try (BufferedReader bufferedReader = new BufferedReader(new FileReader(filepath))) {
+            String line;  // try with resources 
+            while ( (line = bufferedReader.readLine()) != null){
+                    System.out.println(line);
+            }
         }
         }
 
 
     static void write_file(String filepath) throws IOException{
 
-        FileWriter filewriter = new FileWriter(filepath);  // try with resources 
-        filewriter.write("hey coucou I am writing something to the file");
+        try (FileWriter filewriter = new FileWriter(filepath)) {
+            filewriter.write("hey coucou I am writing something to the file");
+        }
         
 
     

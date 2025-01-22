@@ -22,7 +22,7 @@ on2_time = [float(array_of_timeResults[1]), float(array_of_timeResults[4]), floa
 on3_time = [float(array_of_timeResults[2]), float(array_of_timeResults[5]), float(array_of_timeResults[8])]  # O(n^3)
 
 # X-axis labels (representing the array sizes)
-array_sizes = [10, 40, 100]
+array_sizes = [5000, 10000, 15000]
 
 # Plotting
 plt.figure(figsize=(8, 6))

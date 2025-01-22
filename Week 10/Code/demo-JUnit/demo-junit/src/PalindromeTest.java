@@ -21,7 +21,7 @@ public class PalindromeTest {
     @Test
     public void testMethodDoesNotThrowException() {
         try {
-            Palindrome.try_method("level");
+            Palindrome.try_method("leveppppl");
         } catch (Exception e) {
             fail("Expected no exception to be thrown, but got: " + e.getMessage());
         }
@@ -48,8 +48,8 @@ public class PalindromeTest {
     @Test
     @DisplayName("Test valid palindrome")
     void testValidPalindrome() {
-        assertTrue(Palindrome.isPalindrome("level"));
-        assertEquals("Palindrome", Palindrome.checkPalindrome("level"));
+        assertTrue(Palindrome.isPalindrome("levelmkoihjioh"));
+        assertEquals("Palindrome", Palindrome.checkPalindrome("levehbfuyqfbl"));
     }
 
 

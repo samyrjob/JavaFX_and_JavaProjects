@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 import java.io.FileWriter;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -12,14 +13,28 @@ class ComplexMagnitude {
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
 
 
-        // first array of size 10
-        int [] array_figures1 = {1,2,3,4,5,6,7,9,8,10};
-        // second array of size 40
-        int [] array_figures2 = {1,2,3,4,5,6,7,9,8,10, 11,12,13,14,15,16,17,18,19,20, 21, 22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40};
+        // // first array of size 10
+        // int [] array_figures1 = {1,2,3,4,5,6,7,9,8,10};
+        // // second array of size 40
+        // int [] array_figures2 = {1,2,3,4,5,6,7,9,8,10, 11,12,13,14,15,16,17,18,19,20, 21, 22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40};
+        Random random  = new Random();
 
-        // third array of size 100 : 
-        int  [] array_figures3 = new int [100];
-        for (int i =0; i< 100; i++){
+          // first array of size 500 : 
+          int  [] array_figures1 = new int [5000];
+          for (int i =0; i< array_figures1.length; i++){
+              array_figures1[i] = i;
+          }
+
+            // second array of size 1000 : 
+        int  [] array_figures2 = new int [10000];
+        for (int i =0; i< array_figures2.length; i++){
+            array_figures2[i] = i;
+        }
+
+
+        // third array of size 10000 : 
+        int  [] array_figures3 = new int [15000];
+        for (int i =0; i< array_figures3.length; i++){
             array_figures3[i] = i;
         }
 
@@ -29,8 +44,12 @@ class ComplexMagnitude {
         list_of_array_of_integers.add(array_figures3);
 
         for (int [] array_figures : list_of_array_of_integers){
+
+            int elementToFind = random.nextInt(array_figures.length);
+            System.out.println("element to find : " + elementToFind);
+
             long startTime = System.nanoTime();
-            tryComplexityOn(array_figures, 8);
+            tryComplexityOn(array_figures, array_figures[elementToFind]);
             long elapsedTime = System.nanoTime() - startTime;
     
             System.out.println(elapsedTime);
@@ -38,7 +57,7 @@ class ComplexMagnitude {
             bufferedWriter.newLine();
     
             startTime = System.nanoTime();
-            tryComplexityOn2(array_figures, 8);
+            tryComplexityOn2(array_figures, array_figures[elementToFind]);
             elapsedTime = System.nanoTime() - startTime;
     
             System.out.println(elapsedTime);
@@ -46,7 +65,7 @@ class ComplexMagnitude {
             bufferedWriter.newLine();
     
             startTime = System.nanoTime();
-            tryComplexityOn3(array_figures, 8);
+            tryComplexityOn3(array_figures, array_figures[elementToFind]);
             elapsedTime = System.nanoTime() - startTime;
     
             System.out.println(elapsedTime);

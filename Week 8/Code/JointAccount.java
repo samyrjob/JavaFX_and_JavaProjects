@@ -1,125 +1,83 @@
-import java.util.Scanner;
-
-
-
 class BankAccount {
+    private double balance;
+    private int operationCount = 0; // Shared counter for total operations
+    private final int MAX_OPERATIONS = 10; // Max allowed operations
 
-    double balance;
-
-    BankAccount(double balance){
-        this.balance = balance;
+    BankAccount(double initialBalance) {
+        this.balance = initialBalance;
     }
 
-
-    synchronized void make_deposit(double deposit){
-
-        balance += deposit;
-        if (balance < 0 ){
-            System.out.println("the balance is still bellow zero , you still have to add " + (-balance) + " to cover the bank account in the green");
-    } else {
-        System.out.println("you made a deposit of "+ deposit + " ...........\n Now your balance is equal to " + balance);
-    }
-}
-
-    synchronized void withdraw_money(double withdraw){
-        balance -= withdraw;
-        if (balance < 0){
-            System.out.println("You have withdrawn " + withdraw);
-            System.out.println("the balance fell bellow zero, the balance is indeed : " + balance);
-        } else {
-            System.out.println("You have withdrawn " + withdraw);
-            System.out.println("The balance is now : " + balance);
+    public synchronized boolean perform(String userName) {
+        if (operationCount >= MAX_OPERATIONS) {
+            return false; // Stop if max operations reached
         }
 
-
+        operationCount++; // Increment the shared counter
+        int amount = (int)(Math.random() * 100 + 10); // Random amount
+        if (Math.random() > 0.5) {
+            make_deposit(userName, amount);
+        } else {
+            withdraw_money(userName, amount);
+        }
+        return true;
     }
 
+    public synchronized void make_deposit(String userName, double amount) {
+        balance += amount;
+        System.out.println(userName + " made a deposit of " + amount + " ...........");
+        System.out.println(" Now your balance is equal to " + balance);
+    }
 
+    public synchronized void withdraw_money(String userName, double amount) {
+        if (amount <= balance) {
+            balance -= amount;
+            System.out.println(userName + " has withdrawn " + amount);
+            System.out.println("The balance is now : " + balance);
+        } else {
+            System.out.println(userName + " tried to withdraw " + amount + " but insufficient balance.");
+        }
+    }
+
+    public synchronized double getBalance() {
+        return balance;
+    }
 }
-
 
 class UserThread implements Runnable {
-
-    Scanner scanner = new Scanner(System.in);
     Thread thrd;
-    BankAccount bankaccount;
-    static final Object lock = new Object(); // Shared lock for synchronization
+    BankAccount account;
 
-    UserThread(BankAccount bk, String name){
+    private UserThread(String name, BankAccount account) {
         thrd = new Thread(this, name);
-        bankaccount = bk;
+        this.account = account;
     }
 
-    public static UserThread start_and_create(String name, BankAccount bk){
-        UserThread userthread = new UserThread(bk, name);
-        userthread.thrd.start();
-        return userthread;
+    public static UserThread create_and_start(String name, BankAccount account) {
+        UserThread userThread = new UserThread(name, account);
+        userThread.thrd.start();
+        return userThread;
     }
 
-    public void run(){
-
-
-        try {
-            for (int i = 0; i < 5; i++) {
-                synchronized (lock) {
-                    System.out.println("\n" + thrd.getName() + ", choose an option:");
-                    System.out.println("1. Deposit");
-                    System.out.println("2. Withdraw");
-                    System.out.print("Enter your choice: ");
-                    int choice = scanner.nextInt();
-
-                    switch (choice) {
-                        case 1 -> {
-                            System.out.print(thrd.getName() + ", enter deposit amount: ");
-                            double deposit = scanner.nextDouble();
-                            bankaccount.make_deposit(deposit);
-                            System.out.println(thrd.getName() + "'s operation completed.");
-                        }
-                        case 2 -> {
-                            System.out.print(thrd.getName() + ", enter withdrawal amount: ");
-                            double withdraw = scanner.nextDouble();
-                            bankaccount.withdraw_money(withdraw);
-                            System.out.println(thrd.getName() + "'s operation completed.");
-                        }
-                        default -> System.out.println("Invalid choice. Please try again.");
-                    }
-                   
-                }
+    @Override
+    public void run() {
+        while (account.perform(thrd.getName())) {
+            // Keep performing operations until limit is reached
+            try {
+                Thread.sleep(100); // Optional delay for better output readability
+            } catch (InterruptedException e) {
+                System.out.println(thrd.getName() + " interrupted.");
             }
-
-        }
-        catch (Exception ie){
-            ie.printStackTrace();
-
         }
     }
 }
 
-
-
 public class JointAccount {
-
     public static void main(String[] args) {
+        BankAccount common_bk = new BankAccount(1000);
 
-        BankAccount common_bk = new  BankAccount(1000);
-        
-        UserThread user1 = UserThread.start_and_create("user1", common_bk);
-        UserThread user2 = UserThread.start_and_create("user2", common_bk);
+        UserThread.create_and_start("user1", common_bk);
+        UserThread.create_and_start("user2", common_bk);
 
-
-        try {
-            user1.thrd.join();
-            user2.thrd.join();
-        } catch (InterruptedException ie){
-            ie.printStackTrace();
-        }
-
-        System.out.println("\nAll operations completed. Final balance: " + common_bk.balance);
-
+        System.out.println("All operations completed. Final balance: " + common_bk.getBalance());
     }
-
-
-
-
-
 }
